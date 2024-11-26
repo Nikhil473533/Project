@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title> 
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li> 
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav> 
+    <div class="container">
+        <div class="songlist"> 
+         <h1>Best of NCS - No copyright Songs</h1>  
+         <div class="SongItemContainer">
+             <div class="songItem">
+                 <img src="new_cover_1.jpeg" alt="1">
+                 <span>Mortals</span>
+                 <span class="songlistplay"><span class="timestamp">03:49 <i class="far fa-play-circle songPlay"></i></span></span> 
+                </div>
+             <div class="songItem">
+                 <img src="new_cover_2.jpeg" alt="2">
+                 <span>Whoopty</span>
+                 <span class="songlistplay"><span class="timestamp">03:28 <i class="far fa-play-circle songPlay"></i></span></span> 
+                </div>
+             <div class="songItem">
+                 <img src="new_cover_3.jpeg" alt="3">
+                 <span>I am Coming Home</span>
+                 <span class="songlistplay"><span class="timestamp">04:03 <i class="far fa-play-circle songPlay"></i></span></span> 
+                </div>
+             <div class="songItem">
+                 <img src="new_cover_4.jpeg" alt="4">
+                 <span>Plevne</span>
+                 <span class="songlistplay"><span class="timestamp">03:18 <i class="far fa-play-circle songPlay"></i></span></span> 
+                </div>
+             <div class="songItem">
+                 <img src="new_cover_5.jpeg" alt="5">
+                 <span>Ignite</span>
+                 <span class="songlistplay"><span class="timestamp">03:50 <i class="far fa-play-circle songPlay"></i></span></span> 
+                </div>
+             <div class="songItem">
+                 <img src="new_cover_6.jpeg" alt="6">
+                 <span>Waving Flag</span>
+                 <span class="songlistplay"><span class="timestamp">03:45 <i class="far fa-play-circle songPlay"></i></span></span> 
+                </div>
+             <div class="songItem">
+                 <img src="new_cover_7.png" alt="7">
+                 <span>In The End</span>
+                 <span class="songlistplay"><span class="timestamp">03:39 <i class="far fa-play-circle songPlay"></i></span></span> 
+                </div>
+             <div class="songItem">
+                 <img src="new_cover_8.jpeg" alt="8">
+                 <span>I am Greateness</span>
+                 <span class="songlistplay"><span class="timestamp">02:19 <i class="far fa-play-circle songPlay"></i></span></span> 
+                </div>
+             <div class="songItem">
+                 <img src="new_cover_9.jpeg" alt="9">
+                 <span>Hall of Fame</span>
+                 <span class="songlistplay"><span class="timestamp">03:54 <i class="far fa-play-circle songPlay"></i></span></span> 
+                </div>
+             <div class="songItem">
+                 <img src="new_cover_10.jpeg" alt="10">
+                 <span>Written In The Stars</span>
+                 <span class="songlistplay"><span class="timestamp">03:37 <i class="far fa-play-circle songPlay"></i></span></span> 
+                </div>
+            </div> 
+        </div> 
+        <div class="songBanner"></div>
+    </div> 
+    <!-- This is the bottom bar where we will paly the songs. -->
+    <!--By default the bottom bar will be at the top and we need 
+    to use css tto style the bar to push it to the bottom -->
+    <div class="bottom">  
+      <input type="range" name="range" id="myProgressBar" min="0" max="100">
+      <div class="icons">
+        <!-- fontawesome icons --> 
+        <i class="fas fa-2x fa-step-backward" id="previous"></i>
+            <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
+      </div> 
+      <div class="songinfo">
+        <img src="playing.gif" width="60px"> Let Me Love You - DJ Snake 
+      </div>
+    </div> 
+    <script src="https://kit.fontawesome.com/26f6fc38e3.js" crossorigin="anonymous"></script>
+ <script src="script.js"></script>
+</body>
+</html>

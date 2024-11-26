@@ -1,0 +1,126 @@
+/* The following import statements are used to import Ubuntu and Varela round 
+fonts from google fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+} 
+
+*{
+    margin:0;
+    padding:0;
+} 
+
+nav{
+   font-family: 'Ubuntu',sans-serif;
+} 
+
+nav ul{
+    display: flex; 
+    align-items: center; /* To align the items of the ul to center of the flex box*/
+    list-style-type: none; 
+    height:65px ;
+    background-color: black;
+    color: white;
+}  
+/* To keep some space between the list items we give some padding*/
+nav ul li{
+    padding: 0 12px;
+}
+/* fitting the spotify image in the flex-box */
+.brand img{
+    width: 44px; 
+    padding: 0 8px;
+} 
+ /* To align spotify image in the center */
+.brand{
+    display:flex; 
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+} 
+/* Setting min-height of the div-container*/
+.container{
+    min-height:72vh ;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display: flex; 
+    width: 90%;
+    border-radius: 12px;
+    margin: 23px auto; 
+    padding: 20px; 
+    background-image: url('bg.jpg');
+    background-position: right;
+}
+
+.bottom{
+    position: sticky; 
+    height: 82px;
+    background-color: black; 
+    color: white;
+    bottom: 0; /* The progress bar didn't go to the bottom
+                   because the min height of the div- container 
+                   was not set*/
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    
+    } 
+
+  .icons{
+    margin-top: 14px;
+  } 
+
+  .icons i{
+      cursor: pointer;
+  }
+#myProgressBar{
+    width: 80vw;
+    /*text-align: center; /* By aligning the progragess bar to the center 
+                         didn't work because it is not a div we can overcome tyhis by 
+                          making it a flex-box. */
+ cursor: pointer;
+  }  
+
+.SongItemContainer{
+    margin-top: 40px;
+}
+.songItem{
+height: 50px;
+display: flex;
+background: white;
+
+margin: 12px auto;
+color: black; 
+justify-content: space-between;
+align-items: center;
+border-radius: 34px;
+padding: 10px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+} 
+
+.songItem img{
+width: 43px;
+margin-right: 20px ;
+border-radius: 34px;
+} 
+
+.timestamp{
+    margin: 0 23px; 
+    } 
+
+.timestamp i{
+    cursor: pointer;
+} 
+.songinfo{
+    position: absolute;
+    left: 10vw; 
+    font-family: 'Varela Round',sans-serif;
+} 
+
+.songinfo img{
+    opacity: 0;
+    transition: Opacity 1s ease-in;
+}
